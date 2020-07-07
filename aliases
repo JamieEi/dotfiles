@@ -1,0 +1,34 @@
+# new commands
+alias rezsh='source ~/.zshrc'
+alias userls='cat /etc/passwd | cut -d: -f1 | sort'
+alias groupls='cat /etc/group | cut -d: -f1 | sort'
+alias pacup='sudo pacmatic -Syu'
+alias svim='sudo -E vim'
+
+# cd
+alias .='cd ../'
+alias ..='cd ../../'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../../'
+alias ......='cd ../../../../../../'
+
+# ls
+if [[ "$(uname)" = "Darwin" ]]; then
+    alias ls='ls -G'
+else
+    alias ls='ls --color'
+fi
+
+alias la='ls -Ah'
+alias ll='ls -lh'
+alias lr='ls -tRh'
+alias lt='ls -lth'
+alias lal='la -l'
+alias lla='lal'
+
+# other
+alias gw='./gradlew'
+alias jn='jupyter notebook'
+
+
