@@ -6,6 +6,8 @@
 
 - link:
     ~/.aliases: aliases
+    ~/.bash_profile: bash_profile
+    ~/.bashrc: bashrc
     ~/.functions: functions
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
