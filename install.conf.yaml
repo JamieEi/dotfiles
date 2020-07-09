@@ -1,5 +1,6 @@
 - defaults:
     link:
+        create: true
         relink: true
 
 - clean: ['~']
@@ -10,7 +11,9 @@
     ~/.bashrc: bashrc
     ~/.functions: functions
     ~/.tmux.conf: tmux.conf
+    ~/.tmux/plugins/tpm: tpm
     ~/.vimrc: vimrc
+    ~/.zshenv: zshenv
     ~/.zshrc: zshrc
 
 - create:

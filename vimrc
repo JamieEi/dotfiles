@@ -42,6 +42,7 @@ Plugin 'tfnico/vim-gradle'
 "Plugin 'vim-pandoc/vim-pantondoc'
 "Plugin 'vim-pandoc/vim-pandoc-syntax'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'christoomey/vim-tmux-navigator'
 
 " end plugins
 call vundle#end()

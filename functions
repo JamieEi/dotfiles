@@ -1,0 +1,5 @@
+# https://unix.stackexchange.com/questions/3428/share-aliases-and-path-setting-between-zsh-and-bash
+source_sh () {
+  emulate -LR sh
+  . "$@"
+}
