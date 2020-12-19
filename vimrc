@@ -6,13 +6,13 @@
 set nocompatible
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vundle: https://github.com/gmarik/vundle
+" Vundle: https://github.com/VundleVim/Vundle.vim
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 filetype off
 let $GIT_SSL_NO_VERIFY = 'true'
 
-set runtimepath+=~/.vim/bundle/Vundle.vim
+set runtimepath+=~/dotfiles/Vundle.vim
 call vundle#begin()
 
 " let Vundle manage Vundle, required
