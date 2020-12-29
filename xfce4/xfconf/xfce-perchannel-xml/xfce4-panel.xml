@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-panel" version="1.0">
+  <property name="configver" type="int" value="2"/>
+  <property name="panels" type="array">
+    <value type="int" value="1"/>
+    <property name="panel-1" type="empty">
+      <property name="position" type="string" value="p=6;x=0;y=0"/>
+      <property name="length" type="uint" value="100"/>
+      <property name="position-locked" type="bool" value="true"/>
+      <property name="icon-size" type="uint" value="0"/>
+      <property name="size" type="uint" value="26"/>
+      <property name="plugin-ids" type="array">
+        <value type="int" value="4"/>
+        <value type="int" value="23"/>
+        <value type="int" value="2"/>
+        <value type="int" value="11"/>
+        <value type="int" value="6"/>
+        <value type="int" value="22"/>
+        <value type="int" value="8"/>
+        <value type="int" value="9"/>
+        <value type="int" value="10"/>
+        <value type="int" value="7"/>
+        <value type="int" value="12"/>
+        <value type="int" value="3"/>
+        <value type="int" value="26"/>
+        <value type="int" value="13"/>
+      </property>
+      <property name="background-style" type="uint" value="0"/>
+      <property name="background-rgba" type="array">
+        <value type="double" value="0.125490"/>
+        <value type="double" value="0.290196"/>
+        <value type="double" value="0.529412"/>
+        <value type="double" value="1.000000"/>
+      </property>
+    </property>
+  </property>
+  <property name="plugins" type="empty">
+    <property name="plugin-2" type="string" value="tasklist">
+      <property name="grouping" type="uint" value="1"/>
+      <property name="show-labels" type="bool" value="true"/>
+      <property name="show-handle" type="bool" value="false"/>
+      <property name="flat-buttons" type="bool" value="true"/>
+      <property name="middle-click" type="uint" value="1"/>
+      <property name="show-wireframes" type="bool" value="false"/>
+      <property name="include-all-workspaces" type="bool" value="false"/>
+    </property>
+    <property name="plugin-3" type="string" value="separator">
+      <property name="expand" type="bool" value="false"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-4" type="string" value="pager">
+      <property name="rows" type="uint" value="1"/>
+      <property name="miniature-view" type="bool" value="false"/>
+    </property>
+    <property name="plugin-6" type="string" value="systray">
+      <property name="show-frame" type="bool" value="false"/>
+      <property name="square-icons" type="bool" value="false"/>
+      <property name="names-ordered" type="array">
+        <value type="string" value="vokoscreenng"/>
+        <value type="string" value="dnfdragora-updater"/>
+        <value type="string" value="remmina"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="steam"/>
+        <value type="string" value="xfce4-power-manager"/>
+        <value type="string" value="pragha music player"/>
+        <value type="string" value="gwe"/>
+        <value type="string" value="dropbox"/>
+        <value type="string" value="seapplet"/>
+        <value type="string" value="blueberry-tray.py"/>
+        <value type="string" value="networkmanager applet"/>
+      </property>
+      <property name="size-max" type="uint" value="32"/>
+      <property name="names-hidden" type="array">
+        <value type="string" value="dropbox"/>
+      </property>
+    </property>
+    <property name="plugin-8" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+      <property name="show-notifications" type="bool" value="true"/>
+      <property name="mpris-players" type="string" value="chrome.instance10088;chrome.instance11039;chrome.instance1111413;chrome.instance12848;chrome.instance1425705;chrome.instance1750097;chrome.instance1753571;chrome.instance2225187;chrome.instance2544991;chrome.instance258337;chrome.instance3208416;chrome.instance331044;chrome.instance6127;chrome.instance688133;chrome.instance7172;chrome.instance7399;chrome.instance818203;chrome.instance9234;chrome.instance9472;chrome.instance9626;chrome.instance9630;chrome.instance9865;pragha;rhythmbox;spotify;vlc"/>
+      <property name="blacklisted-players" type="string" value="pragha;rhythmbox"/>
+    </property>
+    <property name="plugin-9" type="string" value="power-manager-plugin"/>
+    <property name="plugin-10" type="string" value="notification-plugin"/>
+    <property name="plugin-11" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+      <property name="expand" type="bool" value="true"/>
+    </property>
+    <property name="plugin-12" type="string" value="clock">
+      <property name="mode" type="uint" value="2"/>
+      <property name="digital-format" type="string" value="%b %d, %I:%M %p"/>
+    </property>
+    <property name="plugin-7" type="string" value="separator">
+      <property name="expand" type="bool" value="false"/>
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-13" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-22" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-23" type="string" value="separator">
+      <property name="style" type="uint" value="0"/>
+    </property>
+    <property name="plugin-26" type="string" value="whiskermenu"/>
+  </property>
+</channel>
