@@ -15,6 +15,7 @@
     ~/.vimrc: vimrc
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
+    ~/.config/xfce4: xfce4
 
 - create:
     - ~/bin
