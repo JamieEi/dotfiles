@@ -11,3 +11,6 @@
 [submodule "tpm"]
 	path = tpm
 	url = git@github.com:tmux-plugins/tpm.git
+[submodule ".tmux"]
+	path = .tmux
+	url = https://github.com/gpakosz/.tmux.git
