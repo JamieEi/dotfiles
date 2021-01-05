@@ -10,6 +10,7 @@
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
     ~/.functions: functions
+    ~/.octaverc: octaverc
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.tmux/plugins/tpm: tpm
