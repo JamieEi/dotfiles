@@ -8,9 +8,6 @@
 [submodule "Vundle.vim"]
 	path = Vundle.vim
 	url = git@github.com:VundleVim/Vundle.vim.git
-[submodule "tpm"]
-	path = tpm
-	url = git@github.com:tmux-plugins/tpm.git
 [submodule ".tmux"]
 	path = .tmux
 	url = https://github.com/gpakosz/.tmux.git
