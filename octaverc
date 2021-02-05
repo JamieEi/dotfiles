@@ -1,0 +1,11 @@
+# vi: ft=octave
+
+set(0, "DefaultAxesFontName", "Arial")
+set(0, 'DefaultAxesFontSize', 24)
+
+function clear (varargin)
+  args = sprintf(', "%s"', varargin{:});
+  evalin ("caller", ["builtin('clear')"]);
+  source ("~/.octaverc");
+endfunction
+
