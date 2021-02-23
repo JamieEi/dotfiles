@@ -6,6 +6,7 @@ source $ZSH_BASE/antigen/antigen.zsh # Load Antigen
 
 source ~/.aliases # Source some extra files
 source ~/.functions
+source ~/.vars
 
 antigen use oh-my-zsh # Yes, I want to use Oh My ZSH
 
@@ -49,7 +50,7 @@ export NVM_DIR="$HOME/.nvm"
 # Old
 #--------------------------------------------------------------------------------
 
-echo begin zshrc
+# echo begin zshrc
 
 # Helpful links:
 # http://grml.org/zsh/zsh-lovers.html
@@ -179,32 +180,6 @@ echo begin zshrc
 # Path
 #--------------------------------------------------------------------------------
 
-#PATH=~/scripts:~/bin:~/.local/bin/:$PATH
-#path+=~/opt/android-studio/bin
-#path+=~/opt/idea/bin
-#path+=~/opt/gradle/bin
-#path+=~/opt/scala/bin
-#path+=~/.cabal/bin
-#path+=~/opt/ant/bin
-
-# Add segments that depend on overrides here
-#if [[ -d "$ANDROID_SDK" ]]; then
-#    path+=$ANDROID_SDK/tools
-#    path+=$ANDROID_SDK/platform-tools
-#    BUILD_TOOLS="$ANDROID_SDK/build-tools"
-    # Something is wrong with the method below of getting the latest build tools dir: 1) doesn't
-    # work when added to path; 2) globbing removes it; 3) shows up colored in shell
-#    path+="$BUILD_TOOLS/$(ls $BUILD_TOOLS | tail -n 1)"
-#   path+="$BUILD_TOOLS/23.0.2"
-#fi
-
-# Remove path duplicates
-#typeset -U PATH
-
-# Remove any entries that don't exist
-# http://stackoverflow.com/questions/9347478/how-to-edit-path-variable-in-zsh
-#path=($^path(N))
-
 #--------------------------------------------------------------------------------
 # Finale
 #--------------------------------------------------------------------------------
@@ -216,3 +191,15 @@ echo begin zshrc
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 #export SDKMAN_DIR="/home/jamieei/.sdkman"
 #[[ -s "/home/jamieei/.sdkman/bin/sdkman-init.sh" ]] && source "/home/jamieei/.sdkman/bin/sdkman-init.sh"
+
+# added by setup_fb4a.sh
+export ANDROID_SDK=/opt/android_sdk
+export ANDROID_NDK_REPOSITORY=/opt/android_ndk
+export ANDROID_HOME=${ANDROID_SDK}
+export PATH=${PATH}:${ANDROID_SDK}/emulator:${ANDROID_SDK}/tools:${ANDROID_SDK}/tools/bin:${ANDROID_SDK}/platform-tools
+
+# added by setup_fb4a.sh
+export ANDROID_SDK=/opt/android_sdk
+export ANDROID_NDK_REPOSITORY=/opt/android_ndk
+export ANDROID_HOME=${ANDROID_SDK}
+export PATH=${PATH}:${ANDROID_SDK}/emulator:${ANDROID_SDK}/tools:${ANDROID_SDK}/tools/bin:${ANDROID_SDK}/platform-tools
