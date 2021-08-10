@@ -46,6 +46,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+[ -r /home/jamieei/ovrsource/Software/Apps/skyline/gauntlet/gauntletCli/gauntletCliCompletions.sh ] && \
+  source /home/jamieei/ovrsource/Software/Apps/skyline/gauntlet/gauntletCli/gauntletCliCompletions.sh
+
 #--------------------------------------------------------------------------------
 # Old
 #--------------------------------------------------------------------------------
@@ -189,17 +192,12 @@ export NVM_DIR="$HOME/.nvm"
 
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-#export SDKMAN_DIR="/home/jamieei/.sdkman"
-#[[ -s "/home/jamieei/.sdkman/bin/sdkman-init.sh" ]] && source "/home/jamieei/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="/home/jamieei/.sdkman"
+[[ -s "/home/jamieei/.sdkman/bin/sdkman-init.sh" ]] && source "/home/jamieei/.sdkman/bin/sdkman-init.sh"
 
 # added by setup_fb4a.sh
-export ANDROID_SDK=/opt/android_sdk
-export ANDROID_NDK_REPOSITORY=/opt/android_ndk
-export ANDROID_HOME=${ANDROID_SDK}
+#export ANDROID_SDK=/opt/android_sdk
+#export ANDROID_NDK_REPOSITORY=/opt/android_ndk
+#export ANDROID_HOME=${ANDROID_SDK}
 export PATH=${PATH}:${ANDROID_SDK}/emulator:${ANDROID_SDK}/tools:${ANDROID_SDK}/tools/bin:${ANDROID_SDK}/platform-tools
 
-# added by setup_fb4a.sh
-export ANDROID_SDK=/opt/android_sdk
-export ANDROID_NDK_REPOSITORY=/opt/android_ndk
-export ANDROID_HOME=${ANDROID_SDK}
-export PATH=${PATH}:${ANDROID_SDK}/emulator:${ANDROID_SDK}/tools:${ANDROID_SDK}/tools/bin:${ANDROID_SDK}/platform-tools

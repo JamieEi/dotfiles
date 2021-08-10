@@ -1,4 +1,5 @@
 # new commands
+alias mauidev='~/fbsource/fbandroid/tools/aloha/maui/dev-entry'
 alias rezsh='source ~/.zshrc'
 alias userls='cat /etc/passwd | cut -d: -f1 | sort'
 alias groupls='cat /etc/group | cut -d: -f1 | sort'
@@ -28,6 +29,7 @@ alias lal='la -l'
 alias lla='lal'
 
 # other
+alias firefox-dev='~/opt/firefox/firefox &'
 alias gw='./gradlew'
 alias jn='jupyter notebook'
 

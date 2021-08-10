@@ -1,0 +1,5 @@
+export ANDROID_SDK=/opt/android_sdk
+export ANDROID_HOME=${ANDROID_SDK}
+export ANDROID_NDK_REPOSITORY=/opt/android_ndk
+export ANDROID_NDK=${ANDROID_NDK_REPOSITORY}/r17fb2
+
