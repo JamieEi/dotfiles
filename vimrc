@@ -44,6 +44,7 @@ Plugin 'tfnico/vim-gradle'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'jvirtanen/vim-octave'
+Plugin 'editorconfig/editorconfig-vim'
 
 " end plugins
 call vundle#end()
