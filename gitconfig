@@ -1,0 +1,14 @@
+[user]
+	email = jamie@eisenhart.org
+	name = Jamie Eisenhart
+
+# https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	st = status
+
+[include]
+path = ~/.gitconfig.local
+
