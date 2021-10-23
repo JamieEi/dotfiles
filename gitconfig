@@ -2,11 +2,16 @@
 	email = jamie@eisenhart.org
 	name = Jamie Eisenhart
 
+# https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
 # https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 [alias]
 	br = branch
 	ci = commit
 	co = checkout
+	graph = log --decorate --graph --oneline --all
+	gr = graph
+	nuke = !git reset HEAD --hard && git clean -fd
+	sl = graph
 	st = status
 
 [include]
