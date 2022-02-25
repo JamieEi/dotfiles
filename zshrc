@@ -201,3 +201,5 @@ export SDKMAN_DIR="/home/jamieei/.sdkman"
 #export ANDROID_HOME=${ANDROID_SDK}
 export PATH=${PATH}:${ANDROID_SDK}/emulator:${ANDROID_SDK}/tools:${ANDROID_SDK}/tools/bin:${ANDROID_SDK}/platform-tools
 
+[ -e ~/.zshrc.local ] && source ~/.zshrc.local
+
