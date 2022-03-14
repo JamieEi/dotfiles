@@ -22,3 +22,9 @@ path = ~/.gitconfig.local
 
 [core]
 	autocrlf = input
+[fetch]
+	prune = true
+[diff]
+	colorMoved = zebra
+[pull]
+	rebase = true
