@@ -19,5 +19,6 @@ path = ~/.gitconfig.local
 
 [init]
 	defaultBranch = main
+
 [core]
 	autocrlf = input
