@@ -44,6 +44,11 @@ report._reviewed.columns=uuid
 report._reviewed.sort=reviewed+,modified+
 report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +PENDING or +WAITING )
 
+# Taskwarrior TUI
+# https://kdheepak.com/taskwarrior-tui/configuration/keys/
+uda.taskwarrior-tui.background_process=task sync
+uda.taskwarrior-tui.background_process_period=60
+
 # Contexts
 context.info.read=+info
 context.info.write=+info
