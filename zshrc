@@ -9,11 +9,12 @@ source ~/.functions
 source ~/.vars
 
 # Keychain: https://esc.sh/blog/ssh-agent-windows10-wsl2/
+#if ...
 #/usr/bin/keychain -q --nogui $HOME/.ssh/id_ed25519
 #source $HOME/.keychain/$HOST-sh
 
 #--------------------------------------------------------------------------------
-# Antigen
+# Antigen: https://antigen.sharats.me/
 #--------------------------------------------------------------------------------
 
 antigen use oh-my-zsh # Yes, I want to use Oh My ZSH
