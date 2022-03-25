@@ -52,8 +52,12 @@ uda.taskwarrior-tui.background_process_period=60
 # Contexts
 context.info.read=+info
 context.info.write=+info
+context.kids.read=+kids
+context.kids.write=+kids
 context.lynn.read=+lynn
 context.lynn.write=+lynn
+context.next.read=+next
+context.next.write=+next
 
 # Misc
 news.version=2.6.0
