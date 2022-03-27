@@ -61,3 +61,5 @@ context.next.write=+next
 
 # Misc
 news.version=2.6.0
+search.case.sensitive=no
+
