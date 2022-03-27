@@ -58,6 +58,9 @@ context.lynn.read=+lynn
 context.lynn.write=+lynn
 context.next.read=+next
 context.next.write=+next
+context.work.read=+work
+context.work.write=+work
+
 
 # Misc
 news.version=2.6.0
