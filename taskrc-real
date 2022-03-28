@@ -10,24 +10,18 @@
 
 # Use the command 'task show' to see all defaults and overrides
 
+# Includes
+# http://manpages.ubuntu.com/manpages/xenial/man5/taskrc.5.html
+# Don't currently work because I am installing from source
+#include /usr/share/doc/task/rc/holidays.en-US.rc
+#include /usr/share/doc/task/rc/dark-16.theme
+
 # Files
 data.location=~/.task
 
-# Color theme (uncomment one to use)
-#include /usr/share/task/light-16.theme
-#include /usr/share/task/light-256.theme
-#include /usr/share/task/dark-16.theme
-#include /usr/share/task/dark-256.theme
-#include /usr/share/task/dark-red-256.theme
-#include /usr/share/task/dark-green-256.theme
-#include /usr/share/task/dark-blue-256.theme
-#include /usr/share/task/dark-violets-256.theme
-#include /usr/share/task/dark-yellow-green.theme
-#include /usr/share/task/dark-gray-256.theme
-#include /usr/share/task/dark-gray-blue-256.theme
+# Color theme. Can't use the default include because insalling from source doesn't create.
+#include ~/.taskrc-theme
 #include /usr/share/task/solarized-dark-256.theme
-#include /usr/share/task/solarized-light-256.theme
-#include /usr/share/task/no-color.theme
 
 # Server
 taskd.server=freecinc.com:53589
@@ -48,10 +42,22 @@ report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +P
 # https://kdheepak.com/taskwarrior-tui/configuration/keys/
 uda.taskwarrior-tui.background_process=task sync
 uda.taskwarrior-tui.background_process_period=60
-uda.taskwarrior-tui.shortcuts.1=~/scripts/task-toggle-next.sh
-uda.taskwarrior-tui.shortcuts.2=~/scripts/task-toggle-soon.sh
+uda.taskwarrior-tui.shortcuts.1=~/scripts/task-when-today.sh
+uda.taskwarrior-tui.shortcuts.2=~/scripts/task-when-soon.sh
+uda.taskwarrior-tui.shortcuts.3=~/scripts/task-when-later.sh
+
+# Personal UDAs
+uda.when.type=string
+uda.when.label=When
+uda.when.values=today,soon,
 
 # Contexts
+context.today.read=when:today
+context.today.write=when:today
+context.soon.read=when:today or when:soon
+context.soon.write=when:soon
+context.later.read=when:
+
 context.info.read=+info
 context.info.write=+info
 context.kabuto.read=pro:kabuto
@@ -66,9 +72,34 @@ context.work.read=+work
 context.work.write=+work
 
 # Urgency
-urgency.user.tag.soon.coefficient=10
+urgency.uda.when.today.coefficient=20
+urgency.uda.when.soon.coefficient=10
 
 # Misc
 news.version=2.6.0
 search.case.sensitive=no
+
+###################################
+# Reports
+###################################
+# Examples: https://gist.github.com/djmitche/dd7c9f257306e6b8957759c4d5265cc9
+
+report.next.columns=id,when,urgency,description.desc,tags,project,priority,due
+report.next.labels=ID,When,Urg,Description,Tags,Project,Pri,Due
+report.next.sort=when-/,urgency-
+
+report.today.columns=id,urgency,description.desc,tags,project,priority,due
+report.today.labels=ID,Urg,Description,Tags,Project,Pri,Due
+report.today.filter=status:pending and when:today
+report.today.sort=urgency-
+
+report.soon.columns=id,urgency,description.desc,tags,project,priority,due
+report.soon.labels=ID,Urg,Description,Tags,Project,Pri,Due
+report.soon.filter=status:pending and when:soon
+report.soon.sort=urgency-
+
+report.later.columns=id,urgency,description.desc,tags,project,priority,due
+report.later.labels=ID,Urg,Description,Tags,Project,Pri,Due
+report.later.filter=status:pending and when:
+report.later.sort=urgency-
 

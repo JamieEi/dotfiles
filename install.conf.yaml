@@ -12,7 +12,8 @@
     ~/.functions: functions
     ~/.gitconfig: gitconfig
     ~/.path: path
-    ~/.taskrc: taskrc
+    ~/.taskrc-real: taskrc-real
+    ~/.taskrc-theme: taskrc-theme
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.vars: vars
@@ -25,3 +26,5 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [cp --remove-destination taskrc-wrapper ~/.taskrc]
+

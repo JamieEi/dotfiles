@@ -1,0 +1,4 @@
+# Wrapper for real taskrc to avoid constant writes due to context changes
+
+include ~/.taskrc-real
+
