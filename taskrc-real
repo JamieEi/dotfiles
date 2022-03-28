@@ -66,8 +66,6 @@ context.kids.read=+kids
 context.kids.write=+kids
 context.lynn.read=+lynn
 context.lynn.write=+lynn
-context.next.read=+next
-context.next.write=+next
 context.work.read=+work
 context.work.write=+work
 
