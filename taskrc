@@ -52,6 +52,8 @@ uda.taskwarrior-tui.background_process_period=60
 # Contexts
 context.info.read=+info
 context.info.write=+info
+context.kabuto.read=pro:kabuto
+context.kabuto.write=pro:kabuto +dev
 context.kids.read=+kids
 context.kids.write=+kids
 context.lynn.read=+lynn
