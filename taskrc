@@ -48,6 +48,8 @@ report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +P
 # https://kdheepak.com/taskwarrior-tui/configuration/keys/
 uda.taskwarrior-tui.background_process=task sync
 uda.taskwarrior-tui.background_process_period=60
+uda.taskwarrior-tui.shortcuts.1=~/scripts/task-toggle-next.sh
+uda.taskwarrior-tui.shortcuts.2=~/scripts/task-toggle-soon.sh
 
 # Contexts
 context.info.read=+info
