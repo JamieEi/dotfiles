@@ -65,6 +65,8 @@ context.next.write=+next
 context.work.read=+work
 context.work.write=+work
 
+# Urgency
+urgency.user.tag.soon.coefficient=10
 
 # Misc
 news.version=2.6.0
