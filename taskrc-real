@@ -75,6 +75,7 @@ context.work.write=+work
 urgency.uda.planned.coefficient=10
 
 # Misc
+default.command=planned next
 news.version=2.6.0
 search.case.sensitive=no
 
@@ -98,7 +99,6 @@ report.week.sort=planned+/,urgency-
 
 report.later.description=Tasks for later
 report.later.columns=id,tags,project,description.desc,planned,priority,due
-report.later.labels=ID,Urg,Description,Tags,Project,Pri,Due
 report.later.filter=status:pending and (planned > eow or (planned: ))
 report.later.sort=planned+/,urgency-
 
