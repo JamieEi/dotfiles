@@ -89,16 +89,19 @@ report.next.columns=id,when,urgency,description.desc,tags,project,priority,due
 report.next.labels=ID,When,Urg,Description,Tags,Project,Pri,Due
 report.next.sort=when-/,urgency-
 
+report.today.description=Tasks for today
 report.today.columns=id,urgency,description.desc,tags,project,priority,due
 report.today.labels=ID,Urg,Description,Tags,Project,Pri,Due
 report.today.filter=status:pending and when:today
 report.today.sort=urgency-
 
+report.soon.description=Tasks to do soon
 report.soon.columns=id,urgency,description.desc,tags,project,priority,due
 report.soon.labels=ID,Urg,Description,Tags,Project,Pri,Due
 report.soon.filter=status:pending and when:soon
 report.soon.sort=urgency-
 
+report.later.description=Tasks for later
 report.later.columns=id,urgency,description.desc,tags,project,priority,due
 report.later.labels=ID,Urg,Description,Tags,Project,Pri,Due
 report.later.filter=status:pending and when:
