@@ -12,7 +12,7 @@
     ~/.functions: functions
     ~/.gitconfig: gitconfig
     ~/.path: path
-    ~/.taskrc-hooks: taskrc-hooks
+    ~/.task/hooks: task-hooks
     ~/.taskrc-real: taskrc-real
     ~/.taskrc-scripts: taskrc-scripts
     ~/.taskrc-theme: taskrc-theme

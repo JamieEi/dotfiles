@@ -40,26 +40,25 @@ report._reviewed.filter=( reviewed.none: or reviewed.before:now-6days ) and ( +P
 
 # Taskwarrior TUI
 # https://kdheepak.com/taskwarrior-tui/configuration/keys/
-uda.taskwarrior-tui.background_process=task sync
 uda.taskwarrior-tui.background_process_period=60
-uda.taskwarrior-tui.task-report.looping=false
+uda.taskwarrior-tui.background_process=task sync
 uda.taskwarrior-tui.context-menu.select-on-move=true
-uda.taskwarrior-tui.shortcuts.1=~/.taskrc-scripts/task-when-today.sh
-uda.taskwarrior-tui.shortcuts.2=~/.taskrc-scripts/task-when-soon.sh
-uda.taskwarrior-tui.shortcuts.3=~/.taskrc-scripts/task-when-later.sh
 uda.taskwarrior-tui.selection.reverse=yes
+uda.taskwarrior-tui.shortcuts.1=~/.taskrc-scripts/task-planned-today.sh
+uda.taskwarrior-tui.shortcuts.2=~/.taskrc-scripts/task-planned-soon.sh
+uda.taskwarrior-tui.shortcuts.3=~/.taskrc-scripts/task-planned-later.sh
+uda.taskwarrior-tui.task-report.looping=false
 
 # Personal UDAs
-uda.when.type=string
-uda.when.label=When
-uda.when.values=today,soon,
+uda.planned.type=date
+uda.planned.label=Planned
 
 # Contexts
-context.today.read=when:today
-context.today.write=when:today
-context.soon.read=when:today or when:soon
-context.soon.write=when:soon
-context.later.read=when:
+context.today.read=planned:today
+context.today.write=planned:today
+context.week.read=planned < eow
+context.week.write=planned:eow
+context.later.read=planned:
 
 context.info.read=+info
 context.info.write=+info
@@ -73,8 +72,7 @@ context.work.read=+work
 context.work.write=+work
 
 # Urgency
-urgency.uda.when.today.coefficient=20
-urgency.uda.when.soon.coefficient=10
+urgency.uda.planned.coefficient=10
 
 # Misc
 news.version=2.6.0
@@ -83,27 +81,24 @@ search.case.sensitive=no
 ###################################
 # Reports
 ###################################
-# Examples: https://gist.github.com/djmitche/dd7c9f257306e6b8957759c4d5265cc9
 
-report.next.columns=id,when,urgency,description.desc,tags,project,priority,due
-report.next.labels=ID,When,Urg,Description,Tags,Project,Pri,Due
-report.next.sort=when-/,urgency-
+report.next.columns=id,tags,project,description.desc,planned,priority,due
+report.next.labels=ID,Tags,Project,Description,Planned,Pri,Due
+report.next.sort=planned+/,urgency-
 
 report.today.description=Tasks for today
-report.today.columns=id,urgency,description.desc,tags,project,priority,due
-report.today.labels=ID,Urg,Description,Tags,Project,Pri,Due
-report.today.filter=status:pending and when:today
-report.today.sort=urgency-
+report.today.columns=id,tags,project,description.desc,planned,priority,due
+report.today.filter=status:pending and planned <= eod
+report.today.sort=planned+/,urgency-
 
-report.soon.description=Tasks to do soon
-report.soon.columns=id,urgency,description.desc,tags,project,priority,due
-report.soon.labels=ID,Urg,Description,Tags,Project,Pri,Due
-report.soon.filter=status:pending and when:soon
-report.soon.sort=urgency-
+report.week.description=Tasks for this week
+report.week.columns=id,tags,project,description.desc,planned,priority,due
+report.week.filter=status:pending and (planned <= eow)
+report.week.sort=planned+/,urgency-
 
 report.later.description=Tasks for later
-report.later.columns=id,urgency,description.desc,tags,project,priority,due
+report.later.columns=id,tags,project,description.desc,planned,priority,due
 report.later.labels=ID,Urg,Description,Tags,Project,Pri,Due
-report.later.filter=status:pending and when:
-report.later.sort=urgency-
+report.later.filter=status:pending and (planned > eow or (planned: ))
+report.later.sort=planned+/,urgency-
 
