@@ -20,8 +20,10 @@
 data.location=~/.task
 
 # Color theme. Can't use the default include because insalling from source doesn't create.
-include ~/.taskrc-themes/dark-green-256.theme
 #include /usr/share/task/solarized-dark-256.theme
+include ~/.taskrc-themes/dark-green-256.theme
+rule.precedence.color=uda.planned,deleted,completed,active,overdue,scheduled,due.today,due,blocked,blocking,recurring #,tagged,uda.
+color.uda.planned=on blue
 
 # Server
 taskd.server=freecinc.com:53589
@@ -76,7 +78,7 @@ context.work.write=+work
 urgency.uda.planned.coefficient=10
 
 # Misc
-default.command=list limit:page
+default.command=next limit:page
 news.version=2.6.0
 search.case.sensitive=no
 
