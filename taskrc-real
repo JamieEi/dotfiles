@@ -20,7 +20,7 @@
 data.location=~/.task
 
 # Color theme. Can't use the default include because insalling from source doesn't create.
-include ~/.taskrc-theme
+include ~/.taskrc-themes/dark-green-256.theme
 #include /usr/share/task/solarized-dark-256.theme
 
 # Server
