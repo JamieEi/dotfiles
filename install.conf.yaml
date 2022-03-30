@@ -15,7 +15,7 @@
     ~/.task/hooks: task-hooks
     ~/.taskrc-real: taskrc-real
     ~/.taskrc-scripts: taskrc-scripts
-    ~/.taskrc-theme: taskrc-theme
+    ~/.taskrc-themes: taskrc-themes
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.vars: vars
