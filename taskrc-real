@@ -85,6 +85,7 @@ search.case.sensitive=no
 
 report.next.columns=id,tags,project,description.desc,planned,priority,due
 report.next.labels=ID,Tags,Project,Description,Planned,Pri,Due
+report.next.filter=status:pending -WAITING
 report.next.sort=planned+/,urgency-
 
 report.today.description=Tasks for today
