@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-task mod $1 when:soon
+task mod $1 planned:
 
