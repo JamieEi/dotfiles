@@ -75,7 +75,6 @@ context.work.write=+work
 urgency.uda.planned.coefficient=10
 
 # Misc
-default.command=planned next
 news.version=2.6.0
 search.case.sensitive=no
 
