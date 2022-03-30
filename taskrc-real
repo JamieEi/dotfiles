@@ -57,20 +57,14 @@ uda.planned.type=date
 uda.planned.label=Planned
 
 # Contexts
-context.today.read=planned:today
+context.today.read=(planned <= today)
 context.today.write=planned:today
-context.week.read=planned < eow
+context.week.read=(planned <= eow)
 context.week.write=planned:eow
 context.later.read=planned:
 
-context.info.read=+info
-context.info.write=+info
 context.kabuto.read=pro:kabuto
 context.kabuto.write=pro:kabuto +dev
-context.kids.read=+kids
-context.kids.write=+kids
-context.lynn.read=+lynn
-context.lynn.write=+lynn
 context.work.read=+work
 context.work.write=+work
 
