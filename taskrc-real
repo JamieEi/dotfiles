@@ -85,8 +85,8 @@ search.case.sensitive=no
 # Reports
 ###################################
 
-report.next.columns=id,tags,project,description.desc,planned,priority,due
-report.next.labels=ID,Tags,Project,Description,Planned,Pri,Due
+report.next.columns=id,tags,project,description.desc,eta,priority,due
+report.next.labels=ID,Tags,Project,Description,ETA,Pri,Due
 report.next.filter=status:pending -WAITING
 report.next.sort=eta-/,urgency-
 
