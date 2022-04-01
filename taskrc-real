@@ -22,8 +22,10 @@ data.location=~/.task
 # Color theme. Can't use the default include because insalling from source doesn't create.
 #include /usr/share/task/solarized-dark-256.theme
 include ~/.taskrc-themes/dark-green-256.theme
-rule.precedence.color=uda.eta,deleted,completed,active,overdue,scheduled,due.today,due,blocked,blocking,recurring #,tagged,uda.
-color.uda.eta.day=blue
+rule.precedence.color=uda.eta,deleted,completed,active,overdue,scheduled,due.today,due,blocked,blocking,recurring
+color.uda.eta.day=rgb050
+color.uda.eta.week=rgb242
+color.uda.eta.month=rgb131
 # ISSUE: TUI doesn't support uda colors :(
 # https://kdheepak.com/taskwarrior-tui/configuration/colors/
 
