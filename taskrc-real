@@ -63,6 +63,9 @@ uda.eta.label=ETA
 uda.eta.values=overdue,day,week,month,
 uda.planned.type=date
 uda.planned.label=Planned
+uda.type.type=string
+uda.type.label=Type
+uda.type.values=goal,
 
 # Contexts
 context.today.read=(planned <= today)
@@ -77,7 +80,11 @@ context.work.read=+work
 context.work.write=+work
 
 # Urgency
-urgency.uda.planned.coefficient=10
+urgency.uda.type.goal.coefficient=100
+urgency.uda.eta.overdue.coefficient=50
+urgency.uda.eta.day.coefficient=10
+urgency.uda.eta.week.coefficient=3
+urgency.uda.eta.month.coefficient=2
 
 # Misc
 default.command=next limit:page
@@ -90,33 +97,33 @@ search.case.sensitive=no
 
 report.next.columns=id,eta,tags,project,description.desc,priority,due
 report.next.labels=ID,ETA,Tags,Project,Description,Pri,Due
-report.next.filter=status:pending -WAITING -goal
-report.next.sort=eta-/,urgency-
+report.next.filter=status:pending
+report.next.sort=type-/,eta-/,urgency-
 
 report.day.description=Tasks for today
 report.day.columns=id,tags,project,description.desc,planned,priority,due
-report.day.filter=status:pending -WAITING -goal (planned <= eod)
-report.day.sort=eta-/,urgency-
+report.day.filter=status:pending -WAITING (planned <= eod)
+report.day.sort=type-/,eta-/,urgency-
 
 report.week.description=Tasks for this week
 report.week.columns=id,tags,project,description.desc,planned,priority,due
-report.week.filter=status:pending -WAITING -goal (planned <= eow)
-report.week.sort=eta-/,urgency-
+report.week.filter=status:pending -WAITING (planned <= eow)
+report.week.sort=type-/,eta-/,urgency-
 
 report.month.description=Tasks for this month
 report.month.columns=id,tags,project,description.desc,planned,priority,due
-report.month.filter=status:pending -WAITING -goal (planned <= eom or eta.not: )
-report.month.sort=eta-/,urgency-
+report.month.filter=status:pending -WAITING (planned <= eom or eta.not: )
+report.month.sort=type-/,eta-/,urgency-
 
 report.later.description=Tasks for later
 report.later.columns=id,tags,project,description.desc,planned,priority,due
-report.later.filter=status:pending -WAITING -goal (planned > eow or (planned: ))
-report.later.sort=eta-/,urgency-
+report.later.filter=status:pending -WAITING (planned > eow or (planned: ))
+report.later.sort=type-/,eta-/,urgency-
 
 report.unplanned.description=Unplanned tasks
 report.unplanned.columns=id,tags,project,description.desc,planned,priority,due
-report.unplanned.filter=status:pending -WAITING -goal (planned: )
-report.unplanned.sort=eta-/,urgency-
+report.unplanned.filter=status:pending -WAITING (planned: )
+report.unplanned.sort=type-/,eta-/,urgency-
 
 report.goals.description=Goals
 report.goals.columns=id,tags,project,description.desc,planned,priority,due

@@ -10,7 +10,7 @@ from datetime import date, datetime, timezone
 from dateutil.parser import parse
 
 try:
-    log = True
+    log = False
     logging.basicConfig(
         format="%(levelname)s %(filename)s: %(message)s",
         level=logging.DEBUG if log else logging.CRITICAL,
