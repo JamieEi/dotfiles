@@ -10,7 +10,7 @@ from datetime import date, datetime, timezone
 from dateutil.parser import parse
 
 try:
-    log = False
+    log = True
     logging.basicConfig(
         format="%(levelname)s %(filename)s: %(message)s",
         level=logging.DEBUG if log else logging.CRITICAL,
@@ -50,7 +50,9 @@ try:
             delta = (planned_date - today).days
             logger.debug("delta = %s", delta)
 
-            if delta < 1:
+            if delta < 0:
+                task["eta"] = "overdue"
+            elif delta < 1:
                 task["eta"] = "day"
             elif delta < 7:
                 task["eta"] = "week"
