@@ -52,7 +52,7 @@ try:
 
             if delta < 0:
                 task["eta"] = "overdue"
-            elif delta < 1:
+            elif delta < 1 or task.get("start"):
                 task["eta"] = "day"
             elif delta < 7:
                 task["eta"] = "week"
