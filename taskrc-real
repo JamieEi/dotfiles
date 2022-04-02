@@ -97,7 +97,7 @@ search.case.sensitive=no
 
 report.next.columns=id,eta,tags,project,description.desc,priority,due
 report.next.labels=ID,ETA,Tags,Project,Description,Pri,Due
-report.next.filter=status:pending
+report.next.filter=status:pending type.not:goal
 report.next.sort=type-/,eta-/,urgency-
 
 report.day.description=Tasks for today
@@ -126,7 +126,7 @@ report.unplanned.filter=status:pending -WAITING (planned: )
 report.unplanned.sort=type-/,eta-/,urgency-
 
 report.goals.description=Goals
-report.goals.columns=id,tags,project,description.desc,planned,priority,due
-report.goals.filter=status:pending -WAITING +goal
+report.goals.columns=id,eta,tags,project,description.desc,planned,priority,due
+report.goals.filter=status:pending -WAITING type:goal
 report.goals.sort=eta-/,tags+,project+,description+
 
