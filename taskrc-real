@@ -19,17 +19,6 @@
 # Files
 data.location=~/.task
 
-# Color theme. Can't use the default include because insalling from source doesn't create.
-#include /usr/share/task/solarized-dark-256.theme
-include ~/.taskrc-themes/dark-green-256.theme
-rule.precedence.color=deleted,completed,active,uda.eta.overdue,overdue,uda.eta.day,scheduled,due.today,due,blocked,blocking,recurring
-color.uda.eta.overdue=rgb050 on rgb110
-color.uda.eta.day=rgb050
-color.uda.eta.week=rgb242
-color.uda.eta.month=rgb131
-# ISSUE: TUI doesn't support uda colors :(
-# https://kdheepak.com/taskwarrior-tui/configuration/colors/
-
 # Server
 taskd.server=freecinc.com:53589
 taskd.key=\/home\/jamie\/.task\/freecinc_e9dbf14d.key.pem
@@ -88,6 +77,7 @@ urgency.uda.eta.month.coefficient=2
 
 # Misc
 default.command=next limit:page
+nag=
 news.version=2.6.0
 search.case.sensitive=no
 
@@ -95,33 +85,33 @@ search.case.sensitive=no
 # Reports
 ###################################
 
-report.next.columns=id,eta,tags,project,description.desc,priority,due
-report.next.labels=ID,ETA,Tags,Project,Description,Pri,Due
+report.next.columns=id,type,eta,tags,project,description.desc,priority,due
+report.next.labels=ID,Type,ETA,Tags,Project,Description,Pri,Due
 report.next.filter=status:pending type.not:goal
 report.next.sort=type-/,eta-/,urgency-
 
 report.day.description=Tasks for today
-report.day.columns=id,tags,project,description.desc,planned,priority,due
+report.day.columns=id,type,eta,tags,project,description.desc,planned,priority,due
 report.day.filter=status:pending -WAITING (planned <= eod)
 report.day.sort=type-/,eta-/,urgency-
 
 report.week.description=Tasks for this week
-report.week.columns=id,tags,project,description.desc,planned,priority,due
+report.week.columns=id,type,eta,tags,project,description.desc,planned,priority,due
 report.week.filter=status:pending -WAITING (planned <= eow)
 report.week.sort=type-/,eta-/,urgency-
 
 report.month.description=Tasks for this month
-report.month.columns=id,tags,project,description.desc,planned,priority,due
+report.month.columns=id,type,eta,tags,project,description.desc,planned,priority,due
 report.month.filter=status:pending -WAITING (planned <= eom or eta.not: )
 report.month.sort=type-/,eta-/,urgency-
 
 report.later.description=Tasks for later
-report.later.columns=id,tags,project,description.desc,planned,priority,due
+report.later.columns=id,type,eta,tags,project,description.desc,planned,priority,due
 report.later.filter=status:pending -WAITING (planned > eow or (planned: ))
 report.later.sort=type-/,eta-/,urgency-
 
 report.unplanned.description=Unplanned tasks
-report.unplanned.columns=id,tags,project,description.desc,planned,priority,due
+report.unplanned.columns=id,type,eta,tags,project,description.desc,planned,priority,due
 report.unplanned.filter=status:pending -WAITING (planned: )
 report.unplanned.sort=type-/,eta-/,urgency-
 
