@@ -59,7 +59,9 @@ try:
             elif delta < 31:
                 task["eta"] = "month"
             else:
-                del task["eta"]
+                task.pop("eta", None)
+        else:
+            task.pop("eta", None)
 
         print(json.dumps(task))
     sys.exit
