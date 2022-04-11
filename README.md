@@ -2,10 +2,8 @@
 
 Personal dotfile configuration using [dotbot](https://github.com/anishathalye/dotbot).
 
-Tested on:
-
-- Fedora 32
-- [Fedora Remix](https://www.microsoft.com/en-us/p/fedora-remix-for-wsl/9n6gdm4k2hnc) on WSL2
+Plugins:
+- [ifplatform](https://github.com/ssbanerje/dotbot-ifplatform)
 
 ## Prerequisites
 
@@ -26,11 +24,12 @@ cd
 git clone git@github.com:JamieEi/dotfiles.git
 dotfiles/install
 ```
+
 ## References
 
 ### General
 
-- [GitHub dotfiles  guide](https://dotfiles.github.io/)
+- [GitHub dotfiles guide](https://dotfiles.github.io/)
 - [Dotbot](https://github.com/anishathalye/dotbot)
 - [Managing Your Dotfiles](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
   by Anish Athalye (dotbot author)
@@ -54,3 +53,4 @@ dotfiles/install
 - [Vundle](https://github.com/VundleVim/Vundle.vim) plugin manager
 
 ### WSL
+
