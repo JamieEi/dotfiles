@@ -13,6 +13,7 @@
     ~/.gitconfig: gitconfig
     ~/.path: path
     ~/.task/hooks: task-hooks
+    ~/.taskrc: taskrc-wrapper
     ~/.taskrc-real: taskrc-real
     ~/.taskrc-scripts: taskrc-scripts
     ~/.taskrc-themes: taskrc-themes
@@ -28,5 +29,4 @@
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [cp --remove-destination taskrc-wrapper ~/.taskrc]
 

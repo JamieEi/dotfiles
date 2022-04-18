@@ -21,9 +21,9 @@ data.location=~/.task
 
 # Server
 taskd.server=freecinc.com:53589
-taskd.key=\/home\/jamie\/.task\/freecinc_e9dbf14d.key.pem
-taskd.certificate=\/home\/jamie\/.task\/freecinc_e9dbf14d.cert.pem
-taskd.ca=\/home\/jamie\/.task\/freecinc_e9dbf14d.ca.pem
+taskd.key=~/.task/freecinc_e9dbf14d.key.pem
+taskd.certificate=~/.task/freecinc_e9dbf14d.cert.pem
+taskd.ca=~/.task/freecinc_e9dbf14d.ca.pem
 taskd.credentials=FreeCinc\/freecinc_e9dbf14d\/0a9ed8df-0ba9-483e-90e0-2991d9a02a41
 
 # Tasksh review report
