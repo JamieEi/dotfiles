@@ -44,6 +44,9 @@ uda.taskwarrior-tui.shortcuts.1=~/.taskrc-scripts/set-planned-today.sh
 uda.taskwarrior-tui.shortcuts.2=~/.taskrc-scripts/set-planned-eow.sh
 uda.taskwarrior-tui.shortcuts.3=~/.taskrc-scripts/set-planned-eo2w.sh
 uda.taskwarrior-tui.shortcuts.4=~/.taskrc-scripts/set-unplanned.sh
+uda.taskwarrior-tui.task-report.auto-insert-double-quotes-on-add=false
+uda.taskwarrior-tui.task-report.auto-insert-double-quotes-on-annotate=false
+uda.taskwarrior-tui.task-report.auto-insert-double-quotes-on-log=false
 uda.taskwarrior-tui.task-report.looping=false
 
 # Personal UDAs
