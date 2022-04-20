@@ -11,14 +11,12 @@
     ~/.bashrc: bashrc
     ~/.functions: functions
     ~/.gitconfig: gitconfig
-    ~/.path: path
     ~/.task/hooks: task-hooks
     ~/.taskrc-real: taskrc-real
     ~/.taskrc-scripts: taskrc-scripts
     ~/.taskrc-themes: taskrc-themes
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
-    ~/.vars: vars
     ~/.vimrc: vimrc
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
