@@ -4,6 +4,7 @@ path+=~/opt/idea/bin
 
 # Add segments that depend on overrides here
 if [[ -d "$ANDROID_SDK" ]]; then
+    echo Adding ANDROID_SDK paths
     path+=$ANDROID_SDK/tools
     path+=$ANDROID_SDK/platform-tools
     BUILD_TOOLS="$ANDROID_SDK/build-tools"
