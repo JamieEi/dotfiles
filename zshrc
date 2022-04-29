@@ -5,8 +5,6 @@ ZSH_BASE=$HOME/dotfiles # Base directory for ZSH configuration
 source $ZSH_BASE/antigen/antigen.zsh # Load Antigen
 
 source ~/.aliases # Source some extra files
-source ~/.functions
-source ~/.vars
 
 # Keychain: https://esc.sh/blog/ssh-agent-windows10-wsl2/
 #if ...

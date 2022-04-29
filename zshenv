@@ -14,20 +14,23 @@ case `uname` in
   ;;
 esac
 
-PATH=~/scripts:~/bin:~/.local/bin/:$PATH
+PATH=~/scripts:~/scripts.local:~/bin:~/.local/bin:$ANDROID_SDK/emulator:$PATH
 path+=~/opt/android-studio/bin
 path+=~/opt/idea/bin
 
 # Add segments that depend on overrides here
 if [[ -d "$ANDROID_SDK" ]]; then
-    echo Adding ANDROID_SDK paths
     path+=$ANDROID_SDK/tools
     path+=$ANDROID_SDK/platform-tools
     BUILD_TOOLS="$ANDROID_SDK/build-tools"
     # Something is wrong with the method below of getting the latest build tools dir: 1) doesn't
     # work when added to path; 2) globbing removes it; 3) shows up colored in shell
     # path+="$BUILD_TOOLS/$(ls $BUILD_TOOLS | tail -n 1)"
-   path+="$BUILD_TOOLS/23.0.2"
+   path+="$BUILD_TOOLS/32.0.0"
+fi
+
+if [[ -e ~/.zshenv.local ]]; then
+    source ~/.zshenv.local
 fi
 
 # Remove path duplicates
