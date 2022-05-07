@@ -58,6 +58,10 @@ uda.planned.label=Planned
 uda.type.type=string
 uda.type.label=Type
 uda.type.values=goal,
+uda.estimate.type=numeric
+uda.estimate.label=Est
+uda.actual.type=numeric
+uda.actual.label=Actual
 
 # Contexts
 context.today.read=(planned <= today)
