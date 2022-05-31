@@ -5,8 +5,10 @@
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
 # https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 [alias]
+	aa = add --all
 	br = branch
-	ci = commit
+	ca = commit -a
+	cm = commit
 	co = checkout
 	cp = cherry-pick
 	graph = log --decorate --graph --oneline --all
