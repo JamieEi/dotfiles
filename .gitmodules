@@ -11,6 +11,3 @@
 [submodule ".tmux"]
 	path = .tmux
 	url = https://github.com/gpakosz/.tmux.git
-[submodule "dotbot-ifplatform"]
-	path = dotbot-ifplatform
-	url = https://github.com/ssbanerje/dotbot-ifplatform.git

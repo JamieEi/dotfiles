@@ -3,7 +3,7 @@
 Personal dotfile configuration using [dotbot](https://github.com/anishathalye/dotbot).
 
 Plugins:
-- [ifplatform](https://github.com/ssbanerje/dotbot-ifplatform)
+- ~~[ifplatform](https://github.com/ssbanerje/dotbot-ifplatform)~~ Doesn't seem to work with `ifmacos`
 
 ## Prerequisites
 
