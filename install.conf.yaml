@@ -20,6 +20,9 @@
     ~/.vimrc: vimrc
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
+    ~/Library/KeyBindings/DefaultKeyBinding.dict:
+        path: macos/DefaultKeyBinding.dict
+        if: '[[ "$(uname)" == "Darwin" ]]'
 
 - create:
     - ~/bin
@@ -27,4 +30,4 @@
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
     - [rm ~/.taskrc; cp taskrc-wrapper ~/.taskrc]
-
+    
