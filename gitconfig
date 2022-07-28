@@ -31,3 +31,5 @@ path = ~/.gitconfig.local
 	colorMoved = zebra
 [pull]
 	rebase = true
+[push]
+	default = simple
