@@ -1,35 +1,39 @@
 [user]
-	email = jamie@eisenhart.org
-	name = Jamie Eisenhart
+email = jamie@eisenhart.org
+name = Jamie Eisenhart
 
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
 # https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 [alias]
-	aa = add --all
-	br = branch
-	ca = commit -a
-	cm = commit
-	co = checkout
-	cp = cherry-pick
-	graph = log --decorate --graph --oneline --all
-	gr = graph
-	nuke = !git reset HEAD --hard && git clean -fd
-	sl = graph
-	st = status
+aa = add --all
+br = branch
+ca = commit -a
+cm = commit
+co = checkout
+cp = cherry-pick
+graph = log --decorate --graph --oneline --all
+gr = graph
+nuke = !git reset HEAD --hard && git clean -fd
+sl = graph
+st = status
 
 [include]
 path = ~/.gitconfig.local
 
 [init]
-	defaultBranch = main
+defaultBranch = main
 
 [core]
-	autocrlf = input
+autocrlf = input
+
 [fetch]
-	prune = true
+prune = true
+
 [diff]
-	colorMoved = zebra
+colorMoved = zebra
+
 [pull]
-	rebase = true
+rebase = true
+
 [push]
-	default = simple
+default = simple
