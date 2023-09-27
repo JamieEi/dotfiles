@@ -8,12 +8,15 @@ name = Jamie Eisenhart
 aa = add --all
 br = branch
 ca = commit -a
+cam = commit -am
 cm = commit
 co = checkout
 cp = cherry-pick
 graph = log --decorate --graph --oneline --all
 gr = graph
+myadds = log --name-status --diff-filter=A --author=jamie
 nuke = !git reset HEAD --hard && git clean -fd
+pf = push --force-with-lease
 sl = graph
 st = status
 
