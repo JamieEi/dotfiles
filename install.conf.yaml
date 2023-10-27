@@ -11,6 +11,7 @@
     ~/.bashrc: bashrc
     ~/.functions: functions
     ~/.gitconfig: gitconfig
+    ~/.gradle/gradle.properties: gradle.properties
     ~/.task/hooks: task-hooks
     ~/.taskrc-real: taskrc-real
     ~/.taskrc-scripts: taskrc-scripts

@@ -1,6 +1,7 @@
-export ANDROID_NDK_REPOSITORY=/opt/android_ndk
-export ANDROID_NDK=${ANDROID_NDK_REPOSITORY}/r17fb2
+#export ANDROID_NDK_REPOSITORY=/opt/android_ndk
+#export ANDROID_NDK=${ANDROID_NDK_REPOSITORY}/r17fb2
 export EDITOR=/usr/bin/vim
+export GEM_HOME=~/.gems
 
 # Do OS dependant stuff
 case `uname` in
@@ -15,8 +16,7 @@ case `uname` in
 esac
 
 PATH=~/scripts:~/scripts.local:~/bin:~/.local/bin:$ANDROID_SDK/emulator:$PATH
-path+=~/opt/android-studio/bin
-path+=~/opt/idea/bin
+path+=$GEM_HOME/bin
 
 # Add segments that depend on overrides here
 if [[ -d "$ANDROID_SDK" ]]; then
@@ -31,6 +31,10 @@ fi
 
 if [[ -e ~/.zshenv.local ]]; then
     source ~/.zshenv.local
+fi
+
+if [[ ! -e $GEM_HOME/bin ]]; then
+    mkdir -p $GEM_HOME/bin
 fi
 
 # Remove path duplicates

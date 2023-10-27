@@ -53,3 +53,7 @@ export SDKMAN_DIR="/home/jamieei/.sdkman"
 
 [ -e ~/.zshrc.local ] && source ~/.zshrc.local
 
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
