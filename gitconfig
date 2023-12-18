@@ -15,9 +15,12 @@ cp = cherry-pick
 graph = log --decorate --graph --oneline --all
 gr = graph
 myadds = log --name-status --diff-filter=A --author=jamie
+newest = !git next -n 1> /dev/null && git sw -d HEAD
+n = newest
 nuke = !git reset HEAD --hard && git clean -fd
+osl = graph
 pf = push --force-with-lease
-sl = graph
+rem = record -m
 st = status
 
 [include]
@@ -40,3 +43,7 @@ rebase = true
 
 [push]
 default = simple
+
+[branchless "hint"]
+smartlogFixAbandoned = false
+

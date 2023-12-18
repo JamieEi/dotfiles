@@ -30,3 +30,6 @@ cd
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/jamieei/.sdkman"
 [[ -s "/home/jamieei/.sdkman/bin/sdkman-init.sh" ]] && source "/home/jamieei/.sdkman/bin/sdkman-init.sh"
+ 
+[ -s "$HOME/.cargo/env" ] && \. "$HOME/.cargo/env"
+

@@ -33,6 +33,10 @@ if [[ -e ~/.zshenv.local ]]; then
     source ~/.zshenv.local
 fi
 
+if [[ -e "$HOME/.cargo/env" ]]; then
+  source "$HOME/.cargo/env"
+fi
+
 if [[ ! -e $GEM_HOME/bin ]]; then
     mkdir -p $GEM_HOME/bin
 fi

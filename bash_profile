@@ -8,3 +8,4 @@ fi
 # User specific environment and startup programs
 eval `keychain --eval --agents ssh id_rsa`
 
+#. "$HOME/.cargo/env"
