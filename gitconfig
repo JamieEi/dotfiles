@@ -12,6 +12,8 @@ cam = commit -am
 cm = commit
 co = checkout
 cp = cherry-pick
+de = detach
+detach = sw -d HEAD
 graph = log --decorate --graph --oneline --all
 gr = graph
 myadds = log --name-status --diff-filter=A --author=jamie
