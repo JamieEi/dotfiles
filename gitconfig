@@ -22,8 +22,9 @@ n = newest
 nuke = !git reset HEAD --hard && git clean -fd
 osl = graph
 pf = push --force-with-lease
-rem = record -m
+rem = !git add --all && git record -m
 st = status
+swi = sw -i
 
 [include]
 path = ~/.gitconfig.local
@@ -47,5 +48,5 @@ rebase = true
 default = simple
 
 [branchless "hint"]
-smartlogFixAbandoned = false
+#smartlogFixAbandoned = false
 
