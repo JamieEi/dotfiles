@@ -1,11 +1,15 @@
 [user]
 email = jamie@eisenhart.org
 name = Jamie Eisenhart
+signingkey = B5D686676A41C6F4776ACF0A8C189323F4AEE25F
 
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
 # https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 [alias]
 aa = add --all
+amend = !git add --all && git amend
+at = attach
+attach = !git switch $(git branch -a --contains HEAD | ack -v 'HEAD|remotes/' | head -n 1)
 br = branch
 ca = commit -a
 cam = commit -am
@@ -17,6 +21,7 @@ detach = sw -d HEAD
 graph = log --decorate --graph --oneline --all
 gr = graph
 myadds = log --name-status --diff-filter=A --author=jamie
+new = !git sw -d $(git config branchless.core.mainBranch)
 newest = !git next -n 1> /dev/null && git sw -d HEAD
 n = newest
 nuke = !git reset HEAD --hard && git clean -fd
@@ -49,4 +54,7 @@ default = simple
 
 [branchless "hint"]
 #smartlogFixAbandoned = false
+
+[commit]
+gpgsign = true
 
