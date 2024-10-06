@@ -7,7 +7,7 @@ signingkey = B5D686676A41C6F4776ACF0A8C189323F4AEE25F
 # https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 [alias]
 aa = add --all
-amend = !git add --all && git amend
+amenda = !git add --all && git amend
 at = attach
 attach = !git switch $(git branch -a --contains HEAD | ack -v 'HEAD|remotes/' | head -n 1)
 br = branch
@@ -57,4 +57,4 @@ default = simple
 
 [commit]
 gpgsign = true
-
+template = ~/dotfiles/.gitmessage.txt
