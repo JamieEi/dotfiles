@@ -53,8 +53,14 @@ rebase = true
 default = simple
 
 [branchless "hint"]
-#smartlogFixAbandoned = false
+smartlogFixAbandoned = false
 
 [commit]
 gpgsign = true
 template = ~/dotfiles/.gitmessage.txt
+
+[filter "lfs"]
+process = git-lfs filter-process
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
