@@ -28,6 +28,9 @@ nuke = !git reset HEAD --hard && git clean -fd
 osl = graph
 pf = push --force-with-lease
 rem = !git add --all && git record -m
+sfg = submit --forge github
+sfgc = submit --forge github -c
+sp = sync -p
 st = status
 swi = sw -i
 
