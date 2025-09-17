@@ -16,6 +16,7 @@ case `uname` in
 esac
 
 PATH=~/scripts:~/scripts.local:~/bin:~/.local/bin:$ANDROID_SDK/emulator:$PATH
+path+=$HOME/.cargo/bin
 path+=$GEM_HOME/bin
 
 # Add segments that depend on overrides here

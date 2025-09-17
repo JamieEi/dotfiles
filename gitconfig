@@ -1,13 +1,13 @@
 [user]
-email = jamie@eisenhart.org
 name = Jamie Eisenhart
+email = jamie@eisenhart.org
 signingkey = B5D686676A41C6F4776ACF0A8C189323F4AEE25F
 
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
 # https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
 [alias]
 aa = add --all
-amenda = !git add --all && git amend
+aaa = !git add --all && git amend
 at = attach
 attach = !git switch $(git branch -a --contains HEAD | ack -v 'HEAD|remotes/' | head -n 1)
 br = branch
@@ -28,14 +28,11 @@ nuke = !git reset HEAD --hard && git clean -fd
 osl = graph
 pf = push --force-with-lease
 rem = !git add --all && git record -m
-sfg = submit --forge github
-sfgc = submit --forge github -c
-sp = sync -p
+sf = submit --forge github 'line()'
+sfc = sf -c
+sp = sync -p 'nonrelease()'
 st = status
 swi = sw -i
-
-[include]
-path = ~/.gitconfig.local
 
 [init]
 defaultBranch = main
@@ -43,8 +40,18 @@ defaultBranch = main
 [core]
 autocrlf = input
 
+[commit]
+gpgsign = true
+template = ~/dotfiles/.gitmessage.txt
+
 [fetch]
 prune = true
+
+[filter "lfs"]
+process = git-lfs filter-process
+required = true
+clean = git-lfs clean -- %f
+smudge = git-lfs smudge -- %f
 
 [diff]
 colorMoved = zebra
@@ -58,12 +65,10 @@ default = simple
 [branchless "hint"]
 smartlogFixAbandoned = false
 
-[commit]
-gpgsign = true
-template = ~/dotfiles/.gitmessage.txt
+[branchless "revsets.alias"]
+line = stack() & ancestors(HEAD)
+nonrelease = draft() - ancestors(branches(release))
 
-[filter "lfs"]
-process = git-lfs filter-process
-required = true
-clean = git-lfs clean -- %f
-smudge = git-lfs smudge -- %f
+[include]
+path = ~/.gitconfig.local
+
