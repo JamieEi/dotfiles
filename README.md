@@ -1,26 +1,31 @@
 # Dotfiles for Jamie Eisenhart
 
-Personal dotfile configuration using [dotbot](https://github.com/anishathalye/dotbot).
-
-Plugins:
-- ~~[ifplatform](https://github.com/ssbanerje/dotbot-ifplatform)~~ Doesn't seem to work with `ifmacos`
+Dotfile configuration using:
+- [Dotbot](https://github.com/anishathalye/dotbot) to bootstrap dotfiles
+- [Antigen](https://github.com/zsh-users/antigen) for zsh config
+- [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) for tmux config (not enabled?)
+- [Vundle](https://github.com/VundleVim/Vundle.vim) for vim config
+- [lazy.nvim](https://lazy.folke.io/) for nvim (eventually)
 
 ## Prerequisites
 
-### General
 
-- Git
-- [Connecting to GitHub with SSH](
-  https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
+### Packages
 
-### WSL
+MacOS:
 
-- [Keychain](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/)
+```
+brew install git tmux zsh
+```
+
+### GitHub
+
+- [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh)
 
 ## Setup
 
 ```
-cd
+cd ~
 git clone git@github.com:JamieEi/dotfiles.git
 dotfiles/install
 ```
@@ -34,16 +39,9 @@ dotfiles/install
 - [Managing Your Dotfiles](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
   by Anish Athalye (dotbot author)
 
-### Zsh
-
-- [Zsh startup files](http://zsh.sourceforge.net/Intro/intro_3.html)
-- [Antigen](https://github.com/zsh-users/antigen) plugin maanger
-- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
-
-### Bash
-
 ### Tmux
 
+- [Installation](https://github.com/tmux/tmux/wiki/Installing)
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (TPM)
 - [Manual page](https://man7.org/linux/man-pages/man1/tmux.1.html)
 - [Wiki](https://github.com/tmux/tmux/wiki)
@@ -54,3 +52,11 @@ dotfiles/install
 
 ### WSL
 
+- [Keychain](https://devblogs.microsoft.com/commandline/sharing-ssh-keys-between-windows-and-wsl-2/)
+
+### Zsh
+
+- [Installation](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
+- [Startup files](http://zsh.sourceforge.net/Intro/intro_3.html)
+- [Antigen](https://github.com/zsh-users/antigen) plugin maanger
+- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
