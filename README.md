@@ -58,5 +58,9 @@ dotfiles/install
 
 - [Installation](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 - [Startup files](http://zsh.sourceforge.net/Intro/intro_3.html)
-- [Antigen](https://github.com/zsh-users/antigen) plugin maanger
+- [Antigen](https://github.com/zsh-users/antigen) plugin manager
 - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
+
+### Examples
+
+- [Managing dotfiles and ZSH with dotbot and antigen](https://josnun.com/posts/managing-dotfiles-and-zsh-with-dotbot-and-antigen/)

@@ -1,31 +1,30 @@
-# https://josnun.com/posts/managing-dotfiles-and-zsh-with-dotbot-and-antigen/
-
-ZSH_BASE=$HOME/dotfiles # Base directory for ZSH configuration
-
-source $ZSH_BASE/antigen/antigen.zsh # Load Antigen
-source ~/.aliases # Source some extra files
-
 #--------------------------------------------------------------------------------
-# Antigen: https://antigen.sharats.me/
+# Antigen: https://github.com/zsh-users/antigen
 #--------------------------------------------------------------------------------
 
-antigen use oh-my-zsh # Yes, I want to use Oh My ZSH
+ # Load Antigen
+source $HOMEBREW_PREFIX/share/antigen/antigen.zsh
 
-# Terminal stuff
-antigen bundle git
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle zsh-users/zsh-autosuggestions
-antigen bundle z
+# Load extra files
+source ~/.aliases
+source ~/.functions
 
-# Node stuff
-antigen bundle node
-antigen bundle npm
+# Use Oh My Zsh: https://ohmyz.sh/
+antigen use oh-my-zsh
+
+# Load bundles
+# https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
+antigen bundles <<EOBUNDLES
+  command-not-found  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found
+  zsh-users/zsh-autosuggestions  # https://github.com/zsh-users/zsh-autosuggestions
+  zsh-users/zsh-completions  # https://github.com/zsh-users/zsh-completions
+  zsh-users/zsh-history-substring-search  # https://github.com/zsh-users/zsh-history-substring-search
+  zsh-users/zsh-syntax-highlighting  # https://github.com/zsh-users/zsh-syntax-highlighting
+EOBUNDLES
 
 # Do OS dependant stuff
 case `uname` in
   Darwin)
-    # Commands for OS X go here
     antigen bundle macos
   ;;
   Linux)
@@ -34,7 +33,7 @@ case `uname` in
 esac
 
 # Set the theme
-antigen theme theunraveler
+antigen theme robbyrussell #theunraveler
 
 # And lastly, apply the Antigen stuff
 antigen apply
@@ -55,6 +54,3 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 [ -e ~/.zshrc.local ] && source ~/.zshrc.local
-
-# Load Angular CLI autocompletion.
-source <(ng completion script)
