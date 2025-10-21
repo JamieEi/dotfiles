@@ -9,7 +9,6 @@ Dotfile configuration using:
 
 ## Prerequisites
 
-
 ### Packages
 
 MacOS:
@@ -45,6 +44,7 @@ dotfiles/install
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (TPM)
 - [Manual page](https://man7.org/linux/man-pages/man1/tmux.1.html)
 - [Wiki](https://github.com/tmux/tmux/wiki)
+- [Useful TMUX Plugins...](https://medium.com/@hammad.ai/useful-tmux-plugins-which-i-frequently-use-at-work-41a9b46f7bcb)
 
 ### Vim
 
