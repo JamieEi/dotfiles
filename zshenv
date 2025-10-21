@@ -15,7 +15,7 @@ case `uname` in
   ;;
 esac
 
-PATH=~/scripts:~/scripts.local:~/bin:~/.local/bin:$ANDROID_SDK/emulator:$PATH
+PATH=~/scripts:~/scripts.local:~/bin:~/.local/bin:$ANDROID_SDK/emulator:/opt/homebrew/bin:$PATH
 path+=$HOME/.cargo/bin
 path+=$GEM_HOME/bin
 
