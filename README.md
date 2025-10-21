@@ -14,7 +14,7 @@ Dotfile configuration using:
 MacOS:
 
 ```
-brew install git tmux zsh
+brew install dotbot git tmux zsh
 ```
 
 ### GitHub
