@@ -37,8 +37,10 @@ case `uname` in
   ;;
 esac
 
-# Set the theme
-antigen theme robbyrussell #theunraveler
+# Set the theme. For more:
+# - https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# - https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes
+antigen theme steeef # ys
 
 # And lastly, apply the Antigen stuff
 antigen apply
