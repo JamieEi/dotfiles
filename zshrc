@@ -1,5 +1,8 @@
 #--------------------------------------------------------------------------------
 # Antigen: https://github.com/zsh-users/antigen
+# 
+# Lists of plugins:
+# - https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
 #--------------------------------------------------------------------------------
 
  # Load Antigen
@@ -12,10 +15,12 @@ source ~/.functions
 # Use Oh My Zsh: https://ohmyz.sh/
 antigen use oh-my-zsh
 
+# Bundle config (must be before loading bundles)
+
 # Load bundles
-# https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
 antigen bundles <<EOBUNDLES
   command-not-found  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found
+  Tarrasch/zsh-autoenv  # https://github.com/Tarrasch/zsh-autoenv
   zsh-users/zsh-autosuggestions  # https://github.com/zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions  # https://github.com/zsh-users/zsh-completions
   zsh-users/zsh-history-substring-search  # https://github.com/zsh-users/zsh-history-substring-search

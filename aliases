@@ -4,14 +4,6 @@ alias rezsh='source ~/.zshenv && source ~/.zshrc'
 alias svim='sudo -E vim'
 alias userls='cat /etc/passwd | cut -d: -f1 | sort'
 
-# cd
-alias .='cd ../'
-alias ..='cd ../../'
-alias ...='cd ../../../'
-alias ....='cd ../../../../'
-alias .....='cd ../../../../../'
-alias ......='cd ../../../../../../'
-
 # ls
 if [[ "$(uname)" = "Darwin" ]]; then
     alias ls='ls -G'
@@ -30,4 +22,3 @@ alias lla='lal'
 alias gw='./gradlew'
 alias jn='jupyter notebook'
 alias tt='taskwarrior-tui'
-
