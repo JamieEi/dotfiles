@@ -14,7 +14,12 @@ Dotfile configuration using:
 MacOS:
 
 ```
-brew install dotbot git tmux zsh
+brew install \
+  dotbot \
+  eza \
+  git \
+  tmux \
+  zsh
 ```
 
 ### GitHub
