@@ -1,6 +1,6 @@
 # new commands
 alias groupls='cat /etc/group | cut -d: -f1 | sort'
-alias rezsh='source ~/.zshenv && source ~/.zshrc'
+alias rezsh='omz reload'
 alias svim='sudo -E vim'
 alias userls='cat /etc/passwd | cut -d: -f1 | sort'
 
