@@ -47,6 +47,12 @@ dotfiles/install
 - [Managing Your Dotfiles](https://www.anishathalye.com/2014/08/03/managing-your-dotfiles/)
   by Anish Athalye (dotbot author)
 
+### Nerd Fonts
+
+- [Downloads](https://www.nerdfonts.com/font-downloads)
+- [Rankings](https://aur.archlinux.org/packages?K=nerd-fonts&SB=p)
+- [Searching Homebrew](https://gist.github.com/davidteren/898f2dcccd42d9f8680ec69a3a5d350e)
+
 ### Tmux
 
 - [Installation](https://github.com/tmux/tmux/wiki/Installing)
