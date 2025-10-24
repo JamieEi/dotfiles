@@ -9,6 +9,7 @@
     ~/.aliases: aliases
     ~/.bash_profile: bash_profile
     ~/.bashrc: bashrc
+    ~/.config/starship.toml: starship.toml
     ~/.functions: functions
     ~/.gitconfig: gitconfig
     ~/.gradle/gradle.properties: gradle.properties

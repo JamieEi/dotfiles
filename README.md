@@ -2,6 +2,7 @@
 
 Dotfile configuration using:
 - [Dotbot](https://github.com/anishathalye/dotbot) to bootstrap dotfiles
+- [Starship](https://starship.rs/) for xplat promting
 - [Antigen](https://github.com/zsh-users/antigen) for zsh config
 - [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) for tmux config (not enabled?)
 - [Vundle](https://github.com/VundleVim/Vundle.vim) for vim config
@@ -19,8 +20,10 @@ brew install \
   eza \
   fzf \
   git \
+  starship \
   tmux \
-  zsh
+  zsh &&
+brew install --cask font-lekton-nerd-font
 ```
 
 ### GitHub

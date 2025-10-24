@@ -22,6 +22,7 @@ antigen bundles <<EOBUNDLES
   command-not-found  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/command-not-found
   eza  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/eza
   fzf  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/fzf
+  starship  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/starship
   Tarrasch/zsh-autoenv  # https://github.com/Tarrasch/zsh-autoenv
   zsh-users/zsh-autosuggestions  # https://github.com/zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions  # https://github.com/zsh-users/zsh-completions
@@ -42,7 +43,7 @@ esac
 # Set the theme. For more:
 # - https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # - https://github.com/ohmyzsh/ohmyzsh/wiki/External-themes
-antigen theme steeef # ys
+#antigen theme steeef # ys
 
 # And lastly, apply the Antigen stuff
 antigen apply
