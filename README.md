@@ -23,6 +23,7 @@ brew install \
   starship \
   tig \
   tmux \
+  zoxide \
   zsh &&
 brew install --cask font-inconsolata-nerd-font
 ```

@@ -25,6 +25,7 @@ antigen bundles <<EOBUNDLES
   starship  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/starship
   Tarrasch/zsh-autoenv  # https://github.com/Tarrasch/zsh-autoenv
   vundle  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/vundle
+  zoxide  # https://github.com/ohmyzsh/ohmyzsh/tree/master/plugins/zoxide
   zsh-users/zsh-autosuggestions  # https://github.com/zsh-users/zsh-autosuggestions
   zsh-users/zsh-completions  # https://github.com/zsh-users/zsh-completions
   zsh-users/zsh-history-substring-search  # https://github.com/zsh-users/zsh-history-substring-search
