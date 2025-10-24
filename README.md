@@ -17,6 +17,7 @@ MacOS:
 brew install \
   dotbot \
   eza \
+  fzf \
   git \
   tmux \
   zsh
