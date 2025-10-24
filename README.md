@@ -21,9 +21,10 @@ brew install \
   fzf \
   git \
   starship \
+  tig \
   tmux \
   zsh &&
-brew install --cask font-lekton-nerd-font
+brew install --cask font-inconsolata-nerd-font
 ```
 
 ### GitHub
