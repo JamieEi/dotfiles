@@ -20,6 +20,7 @@
     ~/.tmux.conf: .tmux/.tmux.conf
     ~/.tmux.conf.local: tmux.conf.local
     ~/.vimrc: vimrc
+    ~/.zprofile: zprofile
     ~/.zshenv: zshenv
     ~/.zshrc: zshrc
     ~/Library/KeyBindings/DefaultKeyBinding.dict:

@@ -40,6 +40,30 @@ git clone git@github.com:JamieEi/dotfiles.git
 dotfiles/install
 ```
 
+## Zsh Startup Files
+
+The standard startup files are explained (badly) in the [zsh manual](http://zsh.sourceforge.net/Intro/intro_3.html). Most startup files support a local version, which is sourced after the main file. Local files are expected to contain host-specific overrides and are not source controlled.
+
+For an interactive shell the combined files are (in invocation order):
+
+1. `.zshenv`:
+   - Sourced on all invocations of the shell
+   - Should contain commands to set the command search path, plus other important environment variables
+   - Should not contain commands that produce output or assume the shell is attached to a tty
+2. `.zprofile`: Similar to `.zlogin`, but for interactive shells
+3. `.zshrc`:
+   - Should contain commands to set up aliases, functions, options, key bindings, etc.
+
+For login shells the files are (again in order):
+
+1. `.zshenv`: Same
+2. `.zlogin`:
+   - Should contain commands that should be executed only in login shells
+   - Not the place for alias definitions, options, environment variable settings, etc.
+   - Should not change the shell environment at all
+   - Should be used to set the terminal type and run a series of external commands (fortune, msgs, etc).
+3. `.zlogout`: Sourced when login shells exit
+
 ## References
 
 ### General
@@ -74,7 +98,6 @@ dotfiles/install
 ### Zsh
 
 - [Installation](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
-- [Startup files](http://zsh.sourceforge.net/Intro/intro_3.html)
 - [Antigen](https://github.com/zsh-users/antigen) plugin manager
 - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh)
 
