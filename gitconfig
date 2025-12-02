@@ -1,7 +1,6 @@
 [user]
 name = Jamie Eisenhart
 email = jamie@eisenhart.org
-#signingkey = B5D686676A41C6F4776ACF0A8C189323F4AEE25F
 signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA34XBG5U4Y/BRJdfYTmRCuyWLNqnfp/JlEf0tVQOOY+
 
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
