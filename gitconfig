@@ -1,7 +1,8 @@
 [user]
 name = Jamie Eisenhart
 email = jamie@eisenhart.org
-signingkey = B5D686676A41C6F4776ACF0A8C189323F4AEE25F
+#signingkey = B5D686676A41C6F4776ACF0A8C189323F4AEE25F
+signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIA34XBG5U4Y/BRJdfYTmRCuyWLNqnfp/JlEf0tVQOOY+
 
 # https://git-scm.com/docs/git-config#Documentation/git-config.txt-alias
 # https://git-scm.com/book/en/v2/Git-Basics-Git-Aliases
@@ -44,6 +45,9 @@ autocrlf = input
 gpgsign = true
 template = ~/dotfiles/.gitmessage.txt
 
+[diff]
+colorMoved = zebra
+
 [fetch]
 prune = true
 
@@ -53,8 +57,8 @@ required = true
 clean = git-lfs clean -- %f
 smudge = git-lfs smudge -- %f
 
-[diff]
-colorMoved = zebra
+[gpg]
+format = ssh
 
 [pull]
 rebase = true
@@ -69,6 +73,14 @@ smartlogFixAbandoned = false
 line = stack() & ancestors(HEAD)
 nonrelease = draft() - ancestors(branches(release))
 
+[includeIf "gitdir:/Users/"]
+path = ~/.gitconfig-macos
+
+[includeIf "gitdir:C:/Users/"]
+path = ~/.gitconfig-windows
+
+[includeIf "gitdir:/home/"]
+path = ~/.gitconfig-linux
+
 [include]
 path = ~/.gitconfig.local
-

@@ -12,6 +12,9 @@
     ~/.config/starship.toml: starship.toml
     ~/.functions: functions
     ~/.gitconfig: gitconfig
+    ~/.gitconfig-macos:
+        path: gitconfig-macos
+        if: '[[ "$(uname)" == "Darwin" ]]'
     ~/.gradle/gradle.properties: gradle.properties
     ~/.task/hooks: task-hooks
     ~/.taskrc-real: taskrc-real
